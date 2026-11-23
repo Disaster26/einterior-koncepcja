@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>INTERIOR - meble na wymiar i remonty wnętrz, Sosnowiec</title>
+<meta name="description" content="Meble na wymiar i usługi remontowo-wykończeniowe w Sosnowcu. Kuchnie, garderoby, szafy w zabudowie, meble łazienkowe, kompleksowe remonty łazienek i mieszkań.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#1c1c1c">
+<link rel="icon" href="img/ikona-48.png" sizes="48x48">
+<link rel="apple-touch-icon" href="img/ikona-180.png">
+<link rel="preload" href="fonts/manrope-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/drzwi-kuchnia-jasna-750.webp" fetchpriority="high">
+<style>
+@font-face{font-family:"Manrope";font-weight:400 800;font-display:swap;src:url(fonts/manrope-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B2,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:"Manrope";font-weight:400 800;font-display:swap;src:url(fonts/manrope-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"BC";font-weight:600;font-display:swap;src:url(fonts/barlow-condensed-latin-600.woff2) format("woff2");unicode-range:U+0000-00FF,U+2013-2014,U+2018-201E,U+2022,U+2026}
+@font-face{font-family:"BC";font-weight:600;font-display:swap;src:url(fonts/barlow-condensed-pl-600.woff2) format("woff2");unicode-range:U+0100-024F}
+:root{--dab:#cfa468;--dab-c:#8a5c1f;--graf:#1c1c1c;--graf2:#262626;--szary:#eef0f2;--linia:#d9dde1;--tekst:#1f2124;--szary-t:#5a5f66;--fuga:6px;--hdr:68px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hdr)}
+body{font-family:Manrope,system-ui,sans-serif;color:var(--tekst);background:#fff;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:BC,"Arial Narrow",sans-serif;font-weight:600;line-height:1.05;letter-spacing:.005em}
+h2{font-size:clamp(34px,4.4vw,56px);margin-bottom:18px}
+h3{font-size:clamp(24px,2.2vw,30px);margin-bottom:10px}
+.w{max-width:1240px;margin:0 auto;padding:0 24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;background:var(--dab);color:#1c1c1c;font-weight:700;font-size:16px;text-decoration:none;border:0;cursor:pointer;font-family:inherit;transition:background .2s}
+.btn:hover{background:#ddb67e}
+/* naglowek */
+.hdr{position:sticky;top:0;z-index:50;height:var(--hdr);background:#fff;border-bottom:1px solid var(--linia)}
+.hdr .w{height:100%;display:flex;align-items:center;gap:28px;max-width:none;padding:0 clamp(16px,3vw,40px)}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto}
+.logo img{width:40px;height:36px}
+.logo b{font-family:Manrope;font-weight:700;font-size:19px;letter-spacing:.42em;color:var(--graf)}
+.logo small{display:block;font-size:11px;letter-spacing:.06em;color:var(--szary-t);margin-top:-2px}
+.nav{display:flex;gap:26px}
+.nav a{text-decoration:none;font-weight:600;font-size:15px;padding:6px 0;border-bottom:2px solid transparent}
+.nav a:hover,.nav a.on{border-color:var(--dab)}
+.tel{display:inline-flex;align-items:center;gap:9px;font-weight:700;text-decoration:none;font-size:15px;padding:10px 16px;background:var(--graf);color:#fff}
+.tel svg{width:15px;height:15px}
+.burger{display:none;width:46px;height:46px;border:0;background:none;cursor:pointer;position:relative}
+.burger span,.burger:before,.burger:after{content:"";position:absolute;left:11px;right:11px;height:2px;background:var(--graf);transition:.25s}
+.burger:before{top:16px}.burger span{top:22px}.burger:after{top:28px}
+.menu-open .burger:before{top:22px;transform:rotate(45deg)}.menu-open .burger span{opacity:0}.menu-open .burger:after{top:22px;transform:rotate(-45deg)}
+/* hero: fronty szafy */
+.hero{display:grid;grid-template-columns:minmax(420px,38%) repeat(3,minmax(0,1fr));gap:var(--fuga);background:#111;height:calc(100svh - var(--hdr));min-height:600px;max-height:1040px}
+.front{position:relative;overflow:hidden;background:#2a2a2a}
+.front img{width:100%;height:100%;object-fit:cover}
+.front.tekst{background:var(--graf);color:#fff;display:flex;flex-direction:column;justify-content:center;padding:clamp(28px,4vw,72px)}
+.uchwyt{position:absolute;top:50%;width:5px;height:64px;margin-top:-32px;background:var(--dab);box-shadow:0 1px 3px rgba(0,0,0,.4);z-index:2}
+.uchwyt.p{right:14px}.uchwyt.l{left:14px}
+.uchwyt.mob{display:none}
+.h1-fraza{display:block;font-family:Manrope;font-weight:600;font-size:clamp(15px,1.15vw,18px);letter-spacing:.01em;color:var(--dab);margin-bottom:16px;line-height:1.4}
+.hero h1{font-size:clamp(44px,4.6vw,76px);margin-bottom:22px}
+.hero p{font-size:clamp(16px,1.15vw,18px);color:#d4d6d9;max-width:30em;margin-bottom:32px}
+.hero .dane{margin-top:26px;font-size:14px;color:#a9adb2}
+.hero .dane a{color:#fff;font-weight:700;text-decoration:none}
+/* sekcje */
+section{padding:clamp(64px,8vw,112px) 0}
+.lead{font-size:18px;color:var(--szary-t);max-width:46em}
+.oferta-blok{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(32px,5vw,80px);align-items:center;margin-top:56px}
+.oferta-blok.odwr .szafa{order:2}
+.szafa{position:relative;aspect-ratio:4/3.1;overflow:hidden;background:#ddd}
+.szafa img{width:100%;height:100%;object-fit:cover}
+.szafa:before{content:"";position:absolute;top:0;bottom:0;left:50%;width:var(--fuga);margin-left:-3px;background:#fff;z-index:2}
+.szafa .uchwyt.p{right:auto;left:calc(50% - 22px)}.szafa .uchwyt.l{left:calc(50% + 17px)}
+.lista{list-style:none;columns:2;column-gap:28px;margin-top:20px}
+.lista li{break-inside:avoid;padding:7px 0 7px 22px;position:relative;border-top:1px solid var(--linia);font-size:15.5px}
+.lista li:before{content:"";position:absolute;left:0;top:15px;width:10px;height:10px;background:var(--dab)}
+.oferta-blok p{color:var(--szary-t)}
+/* realizacje */
+.real{background:var(--szary)}
+.gl{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.strz{display:flex;gap:8px}
+.strz button{width:52px;height:52px;border:1px solid #c5cad0;background:#fff;cursor:pointer;display:grid;place-items:center}
+.strz button:hover{background:var(--graf);border-color:var(--graf)}
+.strz button:hover:after{border-color:#fff}
+.strz button:after{content:"";width:11px;height:11px;border-top:2px solid var(--graf);border-right:2px solid var(--graf);transform:rotate(45deg);margin-left:-4px}
+.strz button.wst:after{transform:rotate(-135deg);margin-left:4px}
+.tor{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;margin-top:40px;padding:0 max(24px,calc((100vw - 1192px)/2)) 8px;scrollbar-width:none;cursor:grab;-webkit-overflow-scrolling:touch}
+.tor::-webkit-scrollbar{display:none}
+.tor.drag{cursor:grabbing;scroll-snap-type:none}
+.tor.drag *{pointer-events:none}
+.karta{flex:0 0 clamp(270px,28vw,370px);scroll-snap-align:start;background:#fff}
+.karta .fot{aspect-ratio:1/1;overflow:hidden}
+.karta .fot img{width:100%;height:100%;object-fit:cover;user-select:none;-webkit-user-drag:none}
+.karta div.op{padding:18px 20px 22px}
+.karta h3{font-size:25px;margin-bottom:8px}
+.karta dl{font-size:14px;color:var(--szary-t);line-height:1.5}
+.karta dt{font-weight:700;color:var(--tekst);display:inline}
+.karta dd{display:inline}
+.karta dd:after{content:"";display:block;margin-bottom:4px}
+/* materialy */
+.mat{background:var(--graf);color:#fff}
+.mat .lead{color:#bfc3c8}
+.mat-siatka{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:48px;border-top:1px solid #3a3a3a}
+.mat-siatka div{padding:24px 22px 8px;border-left:1px solid #3a3a3a}
+.mat-siatka div:first-child{border-left:0;padding-left:0}
+.mat-siatka h3{color:var(--dab);font-size:24px}
+.mat-siatka ul{list-style:none;font-size:15px;color:#dcdee1}
+.mat-siatka li{padding:5px 0}
+.mat .przyp{margin-top:36px;font-size:14px;color:#9a9ea4}
+/* o nas */
+.onas{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,80px);align-items:start}
+.onas p{color:var(--szary-t);margin-bottom:14px}
+.onas .podpis{font-weight:700;color:var(--tekst)}
+.onas-fot{display:grid;grid-template-columns:1fr 1fr;gap:var(--fuga)}
+.onas-fot img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}
+.opinie-n{margin-top:80px}
+.op-tor .karta{flex-basis:clamp(270px,30vw,390px);background:var(--szary);padding:26px 26px 24px}
+.op-tor{padding-left:0;padding-right:0}
+.gw{color:#e3a72f;letter-spacing:3px;font-size:17px}
+.op-tor blockquote{margin:12px 0 16px;font-size:15.5px;line-height:1.6}
+.op-tor cite{font-style:normal;font-weight:700;font-size:14px}
+.op-tor cite span{display:block;font-weight:500;color:var(--szary-t)}
+/* kontakt */
+.kontakt{background:var(--szary)}
+.k-siatka{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(32px,5vw,72px);margin-top:40px}
+.k-dane{font-size:17px}
+.k-dane .duzy{font-family:BC;font-weight:600;font-size:clamp(34px,3.6vw,46px);text-decoration:none;display:block;line-height:1.1}
+.k-dane .mail{font-weight:700;font-size:18px;text-decoration:none;border-bottom:2px solid var(--dab)}
+.k-dane p{margin-top:22px;color:var(--szary-t)}
+.mapa{margin-top:28px;aspect-ratio:16/10;background:#dfe2e6;position:relative}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+form{background:#fff;padding:clamp(22px,3vw,40px)}
+form label{display:block;font-weight:600;font-size:14px;margin-bottom:14px}
+form input,form select,form textarea{display:block;width:100%;margin-top:6px;font:inherit;font-size:16px;padding:12px 14px;border:1px solid #c5cad0;background:#fff;border-radius:0}
+form textarea{min-height:120px;resize:vertical}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
+.f-info{display:none;margin-top:14px;font-size:14px;background:var(--szary);padding:12px 14px}
+/* stopka */
+.stopka{background:#141414;color:#b9bdc2;padding:48px 0 28px;font-size:14px}
+.st-siatka{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:28px}
+.stopka b{color:#fff}
+.stopka a{text-decoration:none}
+.stopka a:hover{color:#fff}
+.st-dol{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:36px;padding-top:20px;border-top:1px solid #2c2c2c}
+
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+@media (max-width:1180px){.nav{gap:18px}.nav a{font-size:14px}.hero{grid-template-columns:minmax(400px,44%) repeat(2,minmax(0,1fr))}.hero .front.d3{display:none}.mat-siatka{grid-template-columns:repeat(3,1fr)}.mat-siatka div:nth-child(4){border-left:0;padding-left:0}}
+@media (max-width:980px){
+ :root{--hdr:60px}
+ .nav{position:fixed;top:var(--hdr);left:0;right:0;bottom:0;background:#fff;flex-direction:column;gap:0;padding:12px 24px;transform:translateX(100%);transition:transform .3s;visibility:hidden}
+ .menu-open .nav{transform:none;visibility:visible}
+ .nav a{font-family:BC;font-size:30px;padding:12px 0;border-bottom:1px solid var(--linia)}
+ .burger{display:block}
+ .tel span{display:none}.tel{padding:12px}
+ .logo b{font-size:16px;letter-spacing:.34em}
+}
+@media (max-width:899px){
+ .hero{display:flex;flex-direction:column;gap:var(--fuga);height:auto;min-height:calc(100svh - var(--hdr));max-height:none}
+ .hero .drzwi{display:grid;grid-template-columns:1fr 1fr;gap:var(--fuga);flex:1 1 0;min-height:150px;max-height:380px;order:-1}
+ .uchwyt.mob{display:block}.uchwyt.desk{display:none}
+ .hero .uchwyt{height:48px;margin-top:-24px;width:4px}
+ .hero .drzwi .front{height:100%}
+ .front.tekst{padding:20px 20px 22px;justify-content:center;flex:0 0 auto}
+ .h1-fraza{margin-bottom:10px}
+ .hero h1{font-size:clamp(31px,min(9.4vw,5.5svh),46px);margin-bottom:12px}
+ .h1-fraza{font-size:14.5px}
+ .hero p{margin-bottom:24px;font-size:15.5px;line-height:1.55}
+ .hero .btn{width:100%}
+ .hero .dane{display:none}
+ .oferta-blok{grid-template-columns:1fr;margin-top:40px}.oferta-blok.odwr .szafa{order:0}
+ .onas,.k-siatka{grid-template-columns:1fr}
+ .mat-siatka{grid-template-columns:1fr 1fr}.mat-siatka div{border-left:0;padding-left:0;padding-right:12px}
+ .st-siatka{grid-template-columns:1fr 1fr}.st-siatka>div:first-child{grid-column:1/-1}
+}
+@media (min-width:900px){.hero .drzwi{display:contents}}
+@media (max-width:520px){.lista{column-gap:16px}.lista li{font-size:14.5px;padding-left:18px}.f2{grid-template-columns:1fr}.w{padding:0 18px}.logo small{display:none}.strz{display:none}}
+</style>
+</head>
+<body>
+<header class="hdr">
+ <div class="w">
+  <a class="logo" href="#top" aria-label="INTERIOR - strona główna"><img src="img/znak.webp" width="40" height="36" alt="Znak INTERIOR: dom z meblami"><span><b>INTERIOR</b><small>Kamil Orlikowski</small></span></a>
+  <nav class="nav" id="nav">
+   <a href="#oferta">Meble na wymiar</a>
+   <a href="#remonty">Remonty</a>
+   <a href="#realizacje">Realizacje</a>
+   <a href="#o-nas">O nas</a>
+   <a href="#kontakt">Kontakt</a>
+  </nav>
+  <a class="tel" href="tel:+48518448911"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M3.6 1.2 5.9 1l1.3 3.3-1.6 1.2a8.6 8.6 0 0 0 4.9 4.9l1.2-1.6 3.3 1.3-.2 2.3c-.1.8-.8 1.4-1.6 1.4C6.6 13.8 2.2 9.4 2.2 2.8c0-.8.6-1.5 1.4-1.6z"/></svg><span>518 448 911</span></a>
+  <button class="burger" aria-label="Menu" aria-controls="nav" aria-expanded="false"><span></span></button>
+ </div>
+</header>
+
+<main id="top">
+<div class="hero">
+ <div class="front tekst">
+  <h1><span class="h1-fraza">Meble na wymiar i remonty w Sosnowcu</span>Wyremontujemy i umeblujemy Twoje wnętrze</h1>
+  <p>Kuchnie, garderoby i szafy robimy na wymiar, a łazienki i całe mieszkania wykańczamy od gładzi po biały montaż.</p>
+  <div><a class="btn" href="#kontakt">Zapytaj o wycenę</a></div>
+  <div class="dane">Sosnowiec, Kilińskiego 64/25 &nbsp;·&nbsp; <a href="mailto:kontakt@einterior.pl">kontakt@einterior.pl</a></div>
+ </div>
+ <div class="drzwi">
+  <div class="front d1"><span class="uchwyt p mob"></span><img src="img/drzwi-kuchnia-jasna-750.webp" width="750" height="1000" alt="Biała kuchnia na wymiar z dębowym blatem i lampami nad półwyspem" fetchpriority="high"></div>
+  <div class="front d2"><span class="uchwyt p desk"></span><span class="uchwyt l mob"></span><img src="img/drzwi-lazienka-667.webp" width="667" height="1000" alt="Łazienka po remoncie: ciemne płytki w marmurowy wzór i drewniana zabudowa wanny"></div>
+  <div class="front d3"><span class="uchwyt l"></span><img src="img/drzwi-kuchnia-dab-698.webp" width="698" height="1000" alt="Czarna kuchnia z frontami w dekorze Dąb Artisan, mieszkanie w Katowicach"></div>
+ </div>
+</div>
+
+<section id="oferta">
+ <div class="w">
+  <h2>Meble i remont z jednej ręki</h2>
+  <p class="lead">Robimy meble na wymiar i prace wykończeniowe, więc kuchnię, łazienkę albo całe mieszkanie można zlecić jednej firmie: od przeróbki ścian i płytek po montaż ostatniego frontu.</p>
+
+  <div class="oferta-blok">
+   <div class="szafa"><span class="uchwyt p"></span><span class="uchwyt l"></span><img src="img/oferta-meble-1000.webp" srcset="img/oferta-meble-640.webp 640w, img/oferta-meble-1000.webp 1000w, img/oferta-meble-1333.webp 1333w" sizes="(max-width:899px) 100vw, 640px" width="1333" height="1000" alt="Kuchnia w dekorze Dąb Wotan z czarnymi frontami i podświetlonym blatem" loading="lazy"></div>
+   <div>
+    <h3>Meble na wymiar</h3>
+    <p>Tworzymy meble dopasowane do wnętrza co do centymetra, z płyt i blatów renomowanych producentów, w szerokim wyborze kolorów, struktur i dekorów drewna.</p>
+    <ul class="lista">
+     <li>kuchnie</li><li>garderoby</li><li>szafy w zabudowie</li><li>meble do sypialni</li><li>meble łazienkowe</li><li>meble do salonu</li><li>meble biurowe</li><li>zabudowy nietypowe</li>
+    </ul>
+   </div>
+  </div>
+
+  <div class="oferta-blok odwr" id="remonty">
+   <div class="szafa"><span class="uchwyt p"></span><span class="uchwyt l"></span><img src="img/oferta-remonty-1000.webp" srcset="img/oferta-remonty-640.webp 640w, img/oferta-remonty-1000.webp 1000w, img/oferta-remonty-1400.webp 1400w" sizes="(max-width:899px) 100vw, 640px" width="1400" height="933" alt="Łazienka po kompleksowym remoncie z wanną i drewnianą zabudową" loading="lazy"></div>
+   <div>
+    <h3>Remonty i wykończenia</h3>
+    <p>Odświeżamy, zmieniamy albo wykańczamy od zera mieszkania, domy i biura. Wykonujemy też kompleksowo całe łazienki.</p>
+    <ul class="lista">
+     <li>łazienki pod klucz</li><li>układanie płytek</li><li>malowanie ścian i sufitów</li><li>gładzie, tynki, siatkowanie</li><li>sufity podwieszane</li><li>panele i listwy</li><li>drzwi wewnętrzne</li><li>przeróbki instalacji</li><li>biały montaż</li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="real" id="realizacje">
+ <div class="w gl">
+  <div><h2>Realizacje</h2><p class="lead">Kuchnie, łazienki i całe mieszkania z ostatnich lat. Przy każdej podajemy materiały, z których powstała.</p></div>
+  <div class="strz" data-tor="t1"><button class="wst" aria-label="Poprzednie"></button><button aria-label="Następne"></button></div>
+ </div>
+ <div class="tor" id="t1">
+  <article class="karta"><div class="fot"><img src="img/r-katowice-800.webp" srcset="img/r-katowice-480.webp 480w, img/r-katowice-800.webp 800w, img/r-katowice-1200.webp 1200w" sizes="(max-width:899px) 120vw, 370px" width="800" height="483" alt="Czarna kuchnia z wyspą i dębowymi frontami" loading="lazy"></div><div class="op"><h3>Mieszkanie w Katowicach</h3><dl><dt>Korpusy:</dt> <dd>czerń i Dąb Artisan</dd><dt>Fronty:</dt> <dd>akrylowe antyfinger, czarne mat</dd></dl></div></article>
+  <article class="karta"><div class="fot"><img src="img/r-witryny-800.webp" srcset="img/r-witryny-480.webp 480w, img/r-witryny-800.webp 800w, img/r-witryny-1200.webp 1200w" sizes="(max-width:899px) 120vw, 370px" width="800" height="600" alt="Czarna kuchnia z podświetlanymi witrynami" loading="lazy"></div><div class="op"><h3>Kuchnia z witrynami</h3><dl><dt>Fronty:</dt> <dd>akrylowe ryflowane, czarne mat</dd><dt>Blat:</dt> <dd>slim line 12 mm Staron Supreme Flat White</dd></dl></div></article>
+  <article class="karta"><div class="fot"><img src="img/r-wotan-800.webp" srcset="img/r-wotan-480.webp 480w, img/r-wotan-800.webp 800w, img/r-wotan-1200.webp 1200w" sizes="(max-width:899px) 120vw, 370px" width="800" height="600" alt="Kuchnia dąb Wotan z czernią i lamelami" loading="lazy"></div><div class="op"><h3>Dąb Wotan z czernią</h3><dl><dt>Blat:</dt> <dd>Czerń wulkaniczna 38 mm</dd><dt>Fronty:</dt> <dd>lakierowane czarne mat i Dąb Wotan</dd></dl></div></article>
+  <article class="karta"><div class="fot"><img src="img/r-lazienka-grafit-800.webp" srcset="img/r-lazienka-grafit-480.webp 480w, img/r-lazienka-grafit-800.webp 800w, img/r-lazienka-grafit-1200.webp 1200w" sizes="(max-width:899px) 120vw, 370px" width="800" height="450" alt="Łazienka z grafitowymi meblami i okrągłym lustrem" loading="lazy"></div><div class="op"><h3>Łazienka z charakterem</h3><dl><dt>Korpusy i fronty:</dt> <dd>ciemny grafit i Dąb Cuneo brązowy</dd></dl></div></article>
+  <article class="karta"><div class="fot"><img src="img/r-biala-led-800.webp" srcset="img/r-biala-led-480.webp 480w, img/r-biala-led-800.webp 800w, img/r-biala-led-1200.webp 1200w" sizes="(max-width:899px) 120vw, 370px" width="800" height="523" alt="Biała kuchnia z dębowym blatem i podświetleniem LED" loading="lazy"></div><div class="op"><h3>Biel z Dębem Wotan</h3><dl><dt>Blat:</dt> <dd>Dąb Wotan 38 mm</dd><dt>Fronty:</dt> <dd>akrylowe antyfinger, białe</dd></dl></div></article>
+  <article class="karta"><div class="fot"><img src="img/r-grafit-marmur-800.webp" srcset="img/r-grafit-marmur-480.webp 480w, img/r-grafit-marmur-800.webp 800w, img/r-grafit-marmur-1000.webp 1000w" sizes="(max-width:899px) 120vw, 370px" width="800" height="600" alt="Grafitowa kuchnia z marmurowym blatem" loading="lazy"></div><div class="op"><h3>Grafit z marmurem</h3><dl><dt>Blat i ściana:</dt> <dd>Pfleiderer Marmur Bianco</dd><dt>Fronty:</dt> <dd>akrylowe gładkie, ciemny grafit</dd></dl></div></article>
+  <article class="karta"><div class="fot"><img src="img/r-prysznic-667.webp" srcset="img/r-prysznic-480.webp 480w, img/r-prysznic-667.webp 667w" sizes="(max-width:899px) 120vw, 370px" width="667" height="1000" alt="Łazienka po remoncie z czarną strefą prysznica" loading="lazy"></div><div class="op"><h3>Remont łazienki</h3><dl><dt>Zakres:</dt> <dd>kompleksowo, od płytek po biały montaż</dd></dl></div></article>
+  <article class="karta"><div class="fot"><img src="img/r-antracyt-800.webp" srcset="img/r-antracyt-480.webp 480w, img/r-antracyt-800.webp 800w, img/r-antracyt-1200.webp 1200w" sizes="(max-width:899px) 120vw, 370px" width="800" height="600" alt="Antracytowa kuchnia z dębową wyspą" loading="lazy"></div><div class="op"><h3>Antracytowa kuchnia</h3><dl><dt>Blat:</dt> <dd>Dąb złocisty, klepka 38 mm</dd><dt>Fronty:</dt> <dd>frezowane, lakierowane mat</dd></dl></div></article>
+  <article class="karta"><div class="fot"><img src="img/r-sypialnia-750.webp" srcset="img/r-sypialnia-480.webp 480w, img/r-sypialnia-750.webp 750w" sizes="(max-width:899px) 120vw, 370px" width="750" height="1000" alt="Sypialnia z lamelami i szafkami nocnymi" loading="lazy"></div><div class="op"><h3>Sypialnia</h3><dl><dt>Korpusy:</dt> <dd>Dąb Olejowany i Biały Opal</dd><dt>Fronty:</dt> <dd>frezowane, białe mat</dd></dl></div></article>
+  <article class="karta"><div class="fot"><img src="img/r-przedpokoj-800.webp" srcset="img/r-przedpokoj-480.webp 480w, img/r-przedpokoj-800.webp 800w, img/r-przedpokoj-1200.webp 1200w" sizes="(max-width:899px) 120vw, 370px" width="800" height="535" alt="Zabudowa przedpokoju w bieli i dębie" loading="lazy"></div><div class="op"><h3>Przedpokój</h3><dl><dt>Korpusy:</dt> <dd>Biały Opal i Dąb Hamilton</dd><dt>Szuflady:</dt> <dd>Hafele Matrix</dd></dl></div></article>
+  <article class="karta"><div class="fot"><img src="img/r-akwarium-778.webp" srcset="img/r-akwarium-480.webp 480w, img/r-akwarium-778.webp 778w" sizes="(max-width:899px) 120vw, 370px" width="778" height="1000" alt="Czarna szafka pod akwarium" loading="lazy"></div><div class="op"><h3>Szafka pod akwarium</h3><dl><dt>Płyta:</dt> <dd>czarny mat</dd><dt>Uchwyty:</dt> <dd>krawędziowe, złoty mat</dd></dl></div></article>
+ </div>
+</section>
+
+<section class="mat" id="materialy">
+ <div class="w">
+  <h2>Płyty, fronty i blaty dobieramy razem z Tobą</h2>
+  <p class="lead">Od klasycznej bieli i czerni po dekory drewna i kamienia. Poniżej materiały z naszych ostatnich realizacji.</p>
+  <div class="mat-siatka">
+   <div><h3>Dekory drewna</h3><ul><li>Dąb Wotan</li><li>Dąb Artisan</li><li>Dąb Hamilton naturalny</li><li>Dąb olejowany</li><li>Dąb dziki naturalny</li><li>Dąb Cuneo brązowy</li></ul></div>
+   <div><h3>Kolory płyt</h3><ul><li>Biały Opal</li><li>Antracyt</li><li>Szarość Delfina</li><li>kaszmir</li><li>czarny mat</li><li>ciemny grafit</li></ul></div>
+   <div><h3>Blaty</h3><ul><li>Pfleiderer Marmur Bianco</li><li>Pfleiderer Kashmir White</li><li>HPL Calacatta Olympus</li><li>Staron slim line 12 mm</li><li>Czerń wulkaniczna</li><li>dąb, klepka 38 mm</li></ul></div>
+   <div><h3>Fronty</h3><ul><li>akrylowe antyfinger</li><li>lakierowane mat</li><li>lakierowane na połysk</li><li>frezowane</li><li>ryflowane</li><li>witryny z dymionym szkłem</li></ul></div>
+   <div><h3>Okucia i dodatki</h3><ul><li>szuflady Hafele Matrix</li><li>uchwyty krawędziowe</li><li>podświetlenie LED</li><li>lamele ścienne</li></ul></div>
+  </div>
+  <p class="przyp">Fronty antyfinger to powłoka, na której nie zostają odciski palców.</p>
+ </div>
+</section>
+
+<section id="o-nas">
+ <div class="w">
+  <div class="onas">
+   <div>
+    <h2>O nas</h2>
+    <p>INTERIOR to firma Kamila Orlikowskiego z Sosnowca. Zajmujemy się kompleksowym remontowaniem i urządzaniem wnętrz: robimy meble na wymiar i prace wykończeniowe w mieszkaniach, domach i biurach.</p>
+    <p>Przy meblach pomagamy też w projekcie, a w trakcie prac na bieżąco informujemy o postępach i zmianach. Pracujemy na materiałach znanych producentów i trzymamy się ustalonych terminów.</p>
+    <p class="podpis">Kamil Orlikowski</p>
+   </div>
+   <div class="onas-fot">
+    <img src="img/r-salon-750.webp" srcset="img/r-salon-480.webp 480w, img/r-salon-750.webp 750w" sizes="(max-width:899px) 50vw, 300px" width="750" height="1000" alt="Salon z szafką RTV i witryną" loading="lazy">
+    <img src="img/r-sypialnia-750.webp" srcset="img/r-sypialnia-480.webp 480w, img/r-sypialnia-750.webp 750w" sizes="(max-width:899px) 50vw, 300px" width="750" height="1000" alt="Sypialnia z lamelami i szafkami nocnymi w dekorze dąb olejowany" loading="lazy">
+   </div>
+  </div>
+
+  <div class="opinie-n gl"><div><h2>Opinie z Google</h2><p class="lead">Sześć opinii klientów, wszystkie na pięć gwiazdek.</p></div><div class="strz" data-tor="t2"><button class="wst" aria-label="Poprzednie"></button><button aria-label="Następne"></button></div></div>
+  <div class="tor op-tor" id="t2">
+   <article class="karta"><div class="gw" aria-label="5 na 5">★★★★★</div><blockquote>Meble wykonane idealnie wg projektu, w uzgodnionym terminie, bez dodatkowych kosztów. Kuchnia, łazienka i salon - jestem bardzo zadowolona. Świetny kontakt i pomoc w trakcie realizacji.</blockquote><cite>Monika Krzysiak<span>Google</span></cite></article>
+   <article class="karta"><div class="gw" aria-label="5 na 5">★★★★★</div><blockquote>Wszystko wykonane profesjonalnie na bardzo dobrych materiałach. Z racji doświadczenia Pan Kamil pomógł nam w projektowaniu naszej kuchni, gdzie ostateczny efekt przerósł nasze oczekiwania.</blockquote><cite>Gabriela Nowak<span>Google</span></cite></article>
+   <article class="karta"><div class="gw" aria-label="5 na 5">★★★★★</div><blockquote>Rewelacyjna realizacja i pełen profesjonalizm! Efekt końcowy wyszedł lepiej niż oczekiwałam, wszystko wykonane z ogromną dbałością. Bardzo wysoka jakość.</blockquote><cite>Wioleta Krefta<span>Google</span></cite></article>
+   <article class="karta"><div class="gw" aria-label="5 na 5">★★★★★</div><blockquote>Doskonała jakość świadczonych usług. Meble idealnie wykonane i w świetnej jakości. Dodatkowo poprawili to, co poprzednia ekipa remontowa zepsuła.</blockquote><cite>Łukasz Górecki<span>Google</span></cite></article>
+   <article class="karta"><div class="gw" aria-label="5 na 5">★★★★★</div><blockquote>Bardzo polecam usługi Pana Kamila z firmy INTERIOR. Profesjonalna obsługa. Meble wykonane bardzo ładnie, dokładnie tak, jak zostały zaprojektowane. Świetny kontakt.</blockquote><cite>Marcin Pedzik<span>Google</span></cite></article>
+   <article class="karta"><div class="gw" aria-label="5 na 5">★★★★★</div><blockquote>Jestem bardzo zadowolony z wykonanych mebli. Jakościowo oraz terminowo w punkt.</blockquote><cite>Bartosz Osiadło<span>Google</span></cite></article>
+  </div>
+ </div>
+</section>
+
+<section class="kontakt" id="kontakt">
+ <div class="w">
+  <h2>Kontakt</h2>
+  <p class="lead">Napisz, co chcesz zrobić: nowe meble, remont czy całe mieszkanie. Odezwiemy się, żeby ustalić szczegóły i wycenę.</p>
+  <div class="k-siatka">
+   <div class="k-dane">
+    <a class="duzy" href="tel:+48518448911">+48 518 448 911</a>
+    <a class="mail" href="mailto:kontakt@einterior.pl">kontakt@einterior.pl</a>
+    <p><b style="color:var(--tekst)">INTERIOR Kamil Orlikowski</b><br>Usługi Stolarskie i Wykończeniowe<br>ul. Kilińskiego 64/25, 41-209 Sosnowiec<br>NIP 6443575085 · REGON 525561485</p>
+    <div class="mapa" id="mapa" data-src="https://www.google.com/maps?q=Kili%C5%84skiego+64,+41-209+Sosnowiec&amp;output=embed"></div>
+   </div>
+   <form id="form" novalidate>
+    <div class="f2"><label>Imię<input name="imie" autocomplete="name"></label><label>Telefon<input name="tel" type="tel" autocomplete="tel"></label></div>
+    <label>E-mail<input name="mail" type="email" autocomplete="email"></label>
+    <label>Czego dotyczy zapytanie<select name="temat"><option>Meble na wymiar</option><option>Remont łazienki</option><option>Remont i wykończenie mieszkania</option><option>Meble i remont razem</option><option>Inne</option></select></label>
+    <label>Opis (wymiary, miejscowość, termin)<textarea name="opis"></textarea></label>
+    <button class="btn" type="submit">Wyślij zapytanie</button>
+    <p class="f-info" id="f-info">To podgląd strony, formularz jeszcze nie wysyła wiadomości. Na docelowej stronie zapytanie trafi na kontakt@einterior.pl.</p>
+   </form>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer class="stopka">
+ <div class="w">
+  <div class="st-siatka">
+   <div><b>INTERIOR Kamil Orlikowski</b><br>Usługi Stolarskie i Wykończeniowe<br>ul. Kilińskiego 64/25, 41-209 Sosnowiec</div>
+   <div><b>Oferta</b><br><a href="#oferta">Meble na wymiar</a><br><a href="#remonty">Remonty i wykończenia</a><br><a href="#realizacje">Realizacje</a></div>
+   <div><b>Kontakt</b><br><a href="tel:+48518448911">518 448 911</a><br><a href="mailto:kontakt@einterior.pl">kontakt@einterior.pl</a></div>
+  </div>
+  <div class="st-dol"><span>© 2026 INTERIOR Kamil Orlikowski</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=einterior.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a></div>
+ </div>
+</footer>
+<script>
+(function(){
+var d=document,b=d.body,bt=d.querySelector('.burger');
+bt.addEventListener('click',function(){var o=b.classList.toggle('menu-open');bt.setAttribute('aria-expanded',o)});
+d.querySelectorAll('.nav a').forEach(function(a){a.addEventListener('click',function(){b.classList.remove('menu-open');bt.setAttribute('aria-expanded','false')})});
+d.querySelectorAll('.strz').forEach(function(s){var t=d.getElementById(s.dataset.tor),bs=s.querySelectorAll('button');
+ function krok(){var k=t.querySelector('.karta');return k?k.getBoundingClientRect().width+20:300}
+ bs[0].onclick=function(){t.scrollBy({left:-krok(),behavior:'smooth'})};bs[1].onclick=function(){t.scrollBy({left:krok(),behavior:'smooth'})}});
+d.querySelectorAll('.tor').forEach(function(t){var x0,s0,ruch=false,wcis=false;
+ t.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;wcis=true;ruch=false;x0=e.clientX;s0=t.scrollLeft});
+ window.addEventListener('pointermove',function(e){if(!wcis)return;var dx=e.clientX-x0;if(Math.abs(dx)>5){ruch=true;t.classList.add('drag')}if(ruch)t.scrollLeft=s0-dx});
+ window.addEventListener('pointerup',function(){if(!wcis)return;wcis=false;t.classList.remove('drag')});
+ t.addEventListener('dragstart',function(e){e.preventDefault()})});
+var m=d.getElementById('mapa');
+if('IntersectionObserver' in window){new IntersectionObserver(function(en,o){if(en[0].isIntersecting){m.innerHTML='<iframe title="Mapa dojazdu" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="'+m.dataset.src+'"></iframe>';o.disconnect()}},{rootMargin:'300px'}).observe(m)}
+d.getElementById('form').addEventListener('submit',function(e){e.preventDefault();d.getElementById('f-info').style.display='block'});
+var sek=[].slice.call(d.querySelectorAll('main section[id]')),ln=d.querySelectorAll('.nav a');
+window.addEventListener('scroll',function(){var y=scrollY+120,akt='';sek.forEach(function(s){if(s.offsetTop<=y)akt=s.id});ln.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+akt)})},{passive:true});
+})();
+</script>
+</body>
+</html>
